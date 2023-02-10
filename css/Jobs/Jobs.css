@@ -1,0 +1,17 @@
+.Header{
+    margin: 40px 50px 0px
+}
+ .header-img{
+    width: 500px;
+    height: 100vh;
+  }
+.apply{
+    background-color: #2E6ED5;
+    color: white;
+    padding: 16px 20px;
+}
+.hire-dev{
+    color: #2E6ED5;
+    margin-left: 10px;
+    font-weight: 600;
+}
