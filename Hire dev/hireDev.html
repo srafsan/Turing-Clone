@@ -1,294 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hire Remote Developer</title>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              blues: "#2b47c5 ",
-              violet: "#9040ec",
-            },
-            fontFamily: {
-              opensans: ["Open Sans", "sans-serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hire Remote Developer</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet" />
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blues: "#2b47c5 ",
+            violet: "#9040ec",
+          },
+          fontFamily: {
+            opensans: ["Open Sans", "sans-serif"],
           },
         },
-      };
-    </script>
-    <style>
-      .rigo-img img{
-        font-size: 40px;
-      }
-      </style>
-  </head>
-  <body>
-    <!-- section 1 -->
-    <section
-      class="h-[500px] w-full max-w-7xl mx-auto md:flex justify-between items-center font-opensans mt-10"
-    >
-      <!-- left -->
-      <div class="md:w-1/2">
-        <h1 class="text-5xl">
-          Tired of traditional recruiting to hire software developers?
-        </h1>
-        <h3 class="text-lg py-8">
-          Hire senior pre-vetted remote developers with strong technical and
-          communication skills at unbeatable prices, ready to work in your
-          timezone.
-        </h3>
-        <!-- form -->
-        <div class="flex">
-          <input
-            type="email"
-            name="email"
-            class="px-3 py-2 bg-white border-2 rounded-sm border-gray-300 w-5/12"
-            placeholder="Your work email"
-          />
-          <button class="border-0 text-white bg-blue-500 py-3 px-5">
-            Hire Now
-          </button>
-        </div>
-        <p class="text-base text-gray-600 mb-16 mt-10">
-          Looking for jobs instead?
-          <span class="text-lg text-blues">Apply for Jobs</span>
+      },
+    };
+  </script>
+  <style>
+    .rigo-img img {
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Section -->
+  <!-- <nav class="px-2 bg-white border-gray-200">
+    <div class="container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+      <a href="https://turing-clone.netlify.app/index.html" class="flex items-center">
+        <img src="./Resource/images/icons/Turing-logo.jpeg" class="h-6 mr-3 sm:h-10" alt="Turing Logo" />
+        <span class="self-center text-2xl font-bold whitespace-nowrap">Turing</span>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+          <li>
+            <a href="https://turing-clone.netlify.app/Hire%20dev/hireDev.html"
+              class="block py-2 pl-3 pr-4  text-base font-normal bg-blue-700 rounded md:bg-transparent"
+              aria-current="page">Hire Developers</a>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex justify-center items-center py-2 pl-3 pr-4  text-base font-normal bg-blue-700 rounded md:bg-transparent">Login
+              <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg></button>
+            <!-- Dropdown menu -->
+  <!-- <div id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+              <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Earnings</a>
+                </li>
+              </ul>
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign
+                  out</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="https://developers.turing.com/">
+              <button type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 mr-2 mb-2">Apply
+                for Jobs</button>
+
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- section 1 -->
+  <section class=" md:flex  justify-between max-w-7xl mx-auto px-4  items-center font-opensans mt-10">
+    <!-- left -->
+    <div class="md:w-2/3">
+      <h1 class="text-5xl">
+        Tired of traditional recruiting to hire software developers?
+      </h1>
+      <h3 class="text-lg py-8">
+        Hire senior pre-vetted remote developers with strong technical and
+        communication skills at unbeatable prices, ready to work in your
+        timezone.
+      </h3>
+      <!-- form -->
+      <div class="md:flex">
+
+        <input type="email" name="email"
+          class="md:w-5/12  w-full px-3 py-2 bg-white border-2 rounded-sm border-gray-300 mt-2"
+          placeholder="Your work email" />
+        <button class=" md:w-1/5 block w-full border-0 text-white bg-blue-500 py-3 px-5 mt-2">
+          Hire Now
+        </button>
+
+      </div>
+      <p class="text-base text-gray-600 mb-16 mt-10">
+        Looking for jobs instead?
+        <span class="text-lg text-blues">Apply for Jobs</span>
+      </p>
+      <!-- company showcase  -->
+      <div class="">
+        <p class="text-gray-400 text-sm font-bold">
+          Join hundreds of companies that trust Turing to hire remote software
+          developers
         </p>
-        <!-- company showcase  -->
-        <div class="">
-          <p class="text-gray-400 text-sm font-bold">
-            Join hundreds of companies that trust Turing to hire remote software
-            developers
-          </p>
-          <div class="flex justify-between">
-            <img src="./icons/icon-comp-1.png" alt="" />
-            <img src="./icons/icon-comp-2.png" alt="" />
-            <img src="./icons/icon-comp-3.png" alt="" />
-            <img src="./icons/icon-comp-4.png" alt="" />
-            <img src="./icons/icon-comp-5.png" alt="" />
-          </div>
-        </div>
+        <div class="grid grid-cols-3 md:grid-cols-5"">
+          <img src=" ./icons/icon-comp-1.png" alt="" />
+        <img src="./icons/icon-comp-2.png" alt="" />
+        <img src="./icons/icon-comp-3.png" alt="" />
+        <img src="./icons/icon-comp-4.png" alt="" />
+        <img src="./icons/icon-comp-5.png" alt="" />
       </div>
-      <!-- right -->
-      <div class="md:w-1/2">
-        <!-- <div
-          class="bg-[url('./image/image-1.png')] bg-cover h-[500px] bg-center"
-        ></div> -->
-        <div><img src="./image/image-1.png" alt="" /></div>
-      </div>
-    </section>
+    </div>
+    </div>
 
-    <!-- Quality Check -->
-    <section
-      class="flex max-w-7xl mx-auto pt-36 items-center gap-5 justify-between"
-    >
-      <div class="w-1/2">
-        <h1 class="text-4xl mb-16 font-bold">High quality/cost ratio</h1>
-        <!-- 1 -->
-        <div class="flex gap-4 items-start" >
-          <img src="/Hire dev/icons/icon-quality-1.png" alt="" />
-          <div class="text-2xl">
-            <h3 class="font-bold">
-              Hire deeply vetted developers at half the cost
-            </h3>
-            <h3>
-              Hire the top 1% of 2 million+ developers from 150+ countries who
-              have applied to Turing.
-            </h3>
-          </div>
+    <!-- right -->
+    <div class="md:w-1/2">
+      <img src="./image/image-1.png" alt="" />
+    </div>
+  </section>
+
+  <!-- Quality Check -->
+  <section class="md:flex max-w-7xl mx-auto pt-36 items-center gap-5 justify-between px-4">
+    <div class="mb-10 md:w-1/2">
+      <h1 class="text-4xl mb-16 font-bold">High quality/cost ratio</h1>
+      <!-- 1 -->
+      <div class="flex gap-4 items-start">
+        <img src="/Hire dev/icons/icon-quality-1.png" alt="" />
+        <div class="text-2xl">
+          <h3 class="font-bold">
+            Hire deeply vetted developers at half the cost
+          </h3>
+          <h3>
+            Hire the top 1% of 2 million+ developers from 150+ countries who
+            have applied to Turing.
+          </h3>
         </div>
-        <!-- 2 -->
-        <div class="flex gap-4 my-4 items-start">
+      </div>
+      <!-- 2 -->
+      <div class="flex gap-4 my-4 items-start">
         <img src="/Hire dev/icons/icon-quality-2.png" alt="" />
-          <div class="text-2xl">
-            <h3 class="font-bold">100+ skills available</h3>
-            <h3>
-              Hire React, Node, Python, Angular, Swift, React Native, Android,
-              Java, Rails, Golang, DevOps, ML, Data Engineers, and more.
-            </h3>
-          </div>
+        <div class="text-2xl">
+          <h3 class="font-bold">100+ skills available</h3>
+          <h3>
+            Hire React, Node, Python, Angular, Swift, React Native, Android,
+            Java, Rails, Golang, DevOps, ML, Data Engineers, and more.
+          </h3>
         </div>
-        <!-- 3 -->
-        <div class="flex gap-4 items-start">
-          <img src="/Hire dev/icons/icon-quality-3.png" alt="" />
-          <div class="text-2xl">
-            <h3 class="font-bold">Zero risk</h3>
-            <h3>If you decide to stop within two weeks, you pay nothing.</h3>
-          </div>
+      </div>
+      <!-- 3 -->
+      <div class="flex gap-4 items-start">
+        <img src="/Hire dev/icons/icon-quality-3.png" alt="" />
+        <div class="text-2xl">
+          <h3 class="font-bold">Zero risk</h3>
+          <h3>If you decide to stop within two weeks, you pay nothing.</h3>
         </div>
-        <!-- 3 end -->
+      </div>
+    </div>
+    <!-- right -->
+    <div class="md:w-1/2">
+      <img src="./image/image-4.png" alt="" />
+    </div>
+  </section>
+
+  <!-- rigorous vetting section -->
+  <section class="md:flex justify-between max-w-7xl mx-auto pt-36 px-4">
+    <div class="md:w-1/2">
+      <img src="./image/image-2.png" alt="" />
+    </div>
+    <div class="md:w-1/2">
+      <h1 class="text-4xl mb-16 font-bold">Rigorous Vetting</h1>
+      <!-- 1 -->
+      <div class="flex gap-3 items-start ">
+        <img src="./icons/icon-rigo.png" alt="" />
+        <div class="text-2xl">
+          <h3 class="font-bold mb-5">5+ hours of tests and interviews</h3>
+          <h3>More rigorous than Silicon Valley job interviews. We test for 100+ skills, data structures, algorithms,
+            systems design, software specializations & frameworks.</h3>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="flex gap-3 items-start mt-5">
+        <img src="./icons/icon-rigo-2.svg" alt="" />
+        <div class="text-2xl">
+          <h3 class="font-bold mb-5">Seniority tests</h3>
+          <h3>We select excellent communicators who can proactively take ownership of business and product objectives
+            without micromanagement.</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- effective Collaboration -->
+  <section class="md:flex max-w-7xl mx-auto pt-36 items-center gap-5 justify-between px-4">
+    <div class="md:w-1/2">
+      <h1 class="text-4xl mb-16 font-bold">Effective collaboration</h1>
+      <!-- 1 -->
+      <div class="flex gap-4 items-start ">
+        <img src="/Hire dev/icons/icon-effective-1.svg" alt="" />
+        <div class="text-2xl">
+          <h3 class="font-bold">
+            Daily updates
+          </h3>
+          <h3>
+            Turing’s Workspace gives you even more visibility into your remote developer’s work with automatic time
+            tracking & virtual daily stand-ups.
+          </h3>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="flex gap-4 my-4 items-start">
+        <img src="/Hire dev/icons/icon-effective-2.png" alt="" />
+        <div class="text-2xl">
+          <h3 class="font-bold">Easy administration</h3>
+          <h3>
+            High visibility makes Turing developers easy to engage and ensures their work aligns with what’s valuable to
+            you.
+          </h3>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="flex gap-4 items-start">
+        <img src="/Hire dev/icons/icon-effective-3.png" alt="" />
+        <div class="text-2xl">
+          <h3 class="font-bold">Match your timezone</h3>
+          <h3>Our developers match your time zone and overlap a minimum of 4 hours with your workday.</h3>
+        </div>
+      </div>
+      <!-- 3 end -->
+    </div>
+    <div class="md:w-1/2">
+      <img src="./image/image-3.png" alt="" />
+    </div>
+  </section>
+  <!-- top companany banners -->
+  <section class=" mt-20 text-center text-white bg-gradient-to-r from-blue-700 to-indigo-500 px-4">
+    <div class="max-w-7xl mx-auto py-20">
+      <h2 class="text-3xl md:px-32 font-bold">Join 400+ fast-scaling startups
+        and Fortune 500 companies that have trusted Turing developers</h2>
+      <p class="text-xl py-7">Including top companies backed by:</p>
+      <div class=" grid grid-cols-2 md:grid-cols-5 gap-5 justify-center  justify-items-center  ">
+        <img src="./icons/google.svg" alt="">
+        <img src="./icons/andreesseb.svg" alt="">
+        <img src="./icons/bloomerg.svg" alt="">
+        <img src="./icons/kleiner.svg" alt="">
+        <img src="./icons/founder.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Top client -->
+  <section class="w-ful mt-20 max-w-7xl mx-auto mb-20 px-4">
+    <div>
+      <h2 class="text-3xl font-bold mb-3">Top clients review Turing</h2>
+      <p class="text-lg text-gray-600 mb-10">Turing has helped 400+ Fortune 500 companies and fast-scaling startups
+        <br> hire pre-vetted developers on demand. Here’s what they have to say about us.
+      </p>
+    </div>
+    <!-- cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- card-1  -->
+      <div class="border border-gray-200 rounded-2xl drop-shadow-2xl ">
+        <!-- border -->
+        <div class="px-5 rounded-t-lg text-right text-white bg-gradient-to-r from-blue-700 to-indigo-500"> <i
+            class="fa-solid fa-quote-right fa-2x"></i></div>
+        <!-- card text -->
+        <div class="text-lg px-5 ">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, facilis expedita. Tempora provident itaque
+          nihil nulla. Vel necessitatibus nam reiciendis officiis rem error possimus. Natus voluptatibus odio odit eum
+          dolorum.
+        </div>
+        <div class="flex gap-3  px-5 justify-between items-start mt-20">
+          <img src="./icons/top-review-1.svg" alt="">
+          <div class="text-cyan-500 font-bold ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut a quas non
+            optio, reiciendis quasi maiores sed debitis animi et.</div>
+        </div>
+      </div>
+      <!-- card-2 -->
+      <div class="border border-gray-200 rounded-2xl drop-shadow-2xl ">
+        <!-- border -->
+        <div class="px-5 rounded-t-lg text-right text-white bg-gradient-to-r from-blue-700 to-indigo-500"> <i
+            class="fa-solid fa-quote-right fa-2x"></i></div>
+        <!-- card text -->
+        <div class="text-lg px-5 ">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, facilis expedita. Tempora provident itaque
+          nihil nulla. Vel necessitatibus nam reiciendis officiis rem error possimus. Natus voluptatibus odio odit eum
+          dolorum.
+        </div>
+        <div class="flex gap-3  px-5 justify-between items-start mt-20">
+          <img src="./icons/top-review-2.svg" alt="">
+          <div class="text-cyan-500 font-bold ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut a quas non
+            optio, reiciendis quasi maiores sed debitis animi et.</div>
+        </div>
+      </div>
+      <!-- card-3 -->
+      <div class="border border-gray-200 rounded-2xl drop-shadow-2xl ">
+        <!-- border -->
+        <div class="px-5 rounded-t-lg text-right text-white bg-gradient-to-r from-blue-700 to-indigo-500"> <i
+            class="fa-solid fa-quote-right fa-2x"></i></div>
+        <!-- card text -->
+        <div class="text-lg px-5 ">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, facilis expedita. Tempora provident itaque
+          nihil nulla. Vel necessitatibus nam reiciendis officiis rem error possimus. Natus voluptatibus odio odit eum
+          dolorum.
+        </div>
+        <div class="flex gap-3  px-5 justify-between items-start mt-20">
+          <img src="./icons/top-review-3.svg" alt="">
+          <div class="text-cyan-500 font-bold ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut a quas non
+            optio, reiciendis quasi maiores sed debitis animi et.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- developer profile -->
+  <section class="mx-auto max-w-7xl h-20 mt-10 ">
+    <div class="flex items-center justify-between gap-10 w-full">
+
+      <div class="w-1/2">
+        <h1 class="text-4xl font-bold mb-6">Turing Deep Developer Profile</h1>
+        <p class="text-gray-600 mb-10">Our in-depth resumes help you know your next developers better. Explore their
+          strengths and weaknesses with our Deep Developer Profiles and decide if they are a good fit for your team.</p>
+
+        <button class="border-2 border-blue-600 bg-blue-600 px-4 py-3 rounded-lg text-white font-bold text-xl">Hire
+          now</button>
       </div>
       <div class="w-1/2">
-        <img src="./image/image-4.png" alt="" />
-      </div>
-    </section>
-    <!-- rigorous vetting section -->
-    <section class="flex justify-between max-w-7xl mx-auto pt-36">
-      <div class="w-1/2">
-        <img src="./image/image-2.png" alt="" />
-      </div>
-      <div class="w-1/2">
-        <h1 class="text-4xl mb-16 font-bold">Rigorous Vetting</h1>
-        <!-- 1 -->
-        <div class="flex gap-3 items-start ">
-          <img src="./icons/icon-rigo.png" alt="" />
-          <div class="text-2xl">
-            <h3 class="font-bold mb-5">5+ hours of tests and interviews</h3>
-            <h3>More rigorous than Silicon Valley job interviews. We test for 100+ skills, data structures, algorithms, systems design, software specializations & frameworks.</h3>
-          </div>
-        </div>
-        <!-- 2 -->
-        <div class="flex gap-3 items-start mt-5">
-          <img src="./icons/icon-rigo-2.svg" alt="" />
-          <div class="text-2xl">
-            <h3 class="font-bold mb-5">Seniority tests</h3>
-            <h3>We select excellent communicators who can proactively take ownership of business and product objectives without micromanagement.</h3>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- effective Collaboration -->
-    <section
-      class="flex max-w-7xl mx-auto pt-36 items-center gap-5 justify-between"
-    >
-      <div class="w-1/2">
-        <h1 class="text-4xl mb-16 font-bold">Effective collaboration</h1>
-        <!-- 1 -->
-        <div class="flex gap-4 items-start " >
-          <img src="/Hire dev/icons/icon-effective-1.svg" alt="" />
-          <div class="text-2xl">
-            <h3 class="font-bold">
-              Daily updates
-            </h3>
-            <h3>
-              Turing’s Workspace gives you even more visibility into your remote developer’s work with automatic time tracking & virtual daily stand-ups.
-            </h3>
-          </div>
-        </div>
-        <!-- 2 -->
-        <div class="flex gap-4 my-4 items-start">
-          <img src="/Hire dev/icons/icon-effective-2.png" alt="" />
-          <div class="text-2xl">
-            <h3 class="font-bold">Easy administration</h3>
-            <h3>
-              High visibility makes Turing developers easy to engage and ensures their work aligns with what’s valuable to you.
-            </h3>
-          </div>
-        </div>
-        <!-- 3 -->
-        <div class="flex gap-4 items-start">
-          <img src="/Hire dev/icons/icon-effective-3.png" alt="" />
-          <div class="text-2xl">
-            <h3 class="font-bold">Match your timezone</h3>
-            <h3>Our developers match your time zone and overlap a minimum of 4 hours with your workday.</h3>
-          </div>
-        </div>
-        <!-- 3 end -->
-      </div>
-      <div class="w-1/2">
-        <img src="./image/image-3.png" alt="" />
-      </div>
-    </section>
-    <!-- top companany banners -->
-    <section class="w-full  mt-20 text-center text-white bg-gradient-to-r from-blue-700 to-indigo-500 ">
-      <div class="max-w-7xl mx-auto py-20">
-        <h2 class="text-3xl px-32 font-bold">Join 400+ fast-scaling startups
-          and Fortune 500 companies that have trusted Turing developers</h2>
-          <p class="text-xl py-7">Including top companies backed by:</p>
-          <div class="flex gap-14">
-            <img src="./icons/google.svg" alt="">
-            <img src="./icons/andreesseb.svg" alt="">
-            <img src="./icons/bloomerg.svg" alt="">
-            <img src="./icons/kleiner.svg" alt="">
-            <img src="./icons/founder.svg" alt="">
-          </div>
-      </div>
-    </section>
-
-    <!-- Top client -->
-    <section class="w-ful mt-20 max-w-7xl mx-auto mb-20 ">
-      <div>
-        <h2 class="text-3xl font-bold mb-3">Top clients review Turing</h2>
-        <p class="text-lg text-gray-600 mb-10">Turing has helped 400+ Fortune 500 companies and fast-scaling startups 
-          <br> hire pre-vetted developers on demand. Here’s what they have to say about us.</p>
-      </div>
-      <!-- cards -->
-      <div class="grid grid-cols-3 gap-4">
-        <!-- card-1  -->
-        <div class="border border-gray-200 rounded-2xl drop-shadow-2xl ">
-          <!-- border -->
-          <div class="px-5 rounded-t-lg text-right text-white bg-gradient-to-r from-blue-700 to-indigo-500"> <i class="fa-solid fa-quote-right fa-2x"></i></div>
-          <!-- card text -->
-          <div class="text-lg px-5 ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, facilis expedita. Tempora provident itaque nihil nulla. Vel necessitatibus nam reiciendis officiis rem error possimus. Natus voluptatibus odio odit eum dolorum.
-          </div>
-          <div class="flex gap-3  px-5 justify-between items-start mt-20">
-            <img src="./icons/top-review-1.svg" alt="">
-            <div class="text-cyan-500 font-bold ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut a quas non optio, reiciendis quasi maiores sed debitis animi et.</div>
-          </div>
-        </div>
-        <!-- card-2 -->
-        <div class="border border-gray-200 rounded-2xl drop-shadow-2xl ">
-          <!-- border -->
-          <div class="px-5 rounded-t-lg text-right text-white bg-gradient-to-r from-blue-700 to-indigo-500"> <i class="fa-solid fa-quote-right fa-2x"></i></div>
-          <!-- card text -->
-          <div class="text-lg px-5 ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, facilis expedita. Tempora provident itaque nihil nulla. Vel necessitatibus nam reiciendis officiis rem error possimus. Natus voluptatibus odio odit eum dolorum.
-          </div>
-          <div class="flex gap-3  px-5 justify-between items-start mt-20">
-            <img src="./icons/top-review-2.svg" alt="">
-            <div class="text-cyan-500 font-bold ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut a quas non optio, reiciendis quasi maiores sed debitis animi et.</div>
-          </div>
-        </div>
-        <!-- card-3 -->
-        <div class="border border-gray-200 rounded-2xl drop-shadow-2xl ">
-          <!-- border -->
-          <div class="px-5 rounded-t-lg text-right text-white bg-gradient-to-r from-blue-700 to-indigo-500"> <i class="fa-solid fa-quote-right fa-2x"></i></div>
-          <!-- card text -->
-          <div class="text-lg px-5 ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, facilis expedita. Tempora provident itaque nihil nulla. Vel necessitatibus nam reiciendis officiis rem error possimus. Natus voluptatibus odio odit eum dolorum.
-          </div>
-          <div class="flex gap-3  px-5 justify-between items-start mt-20">
-            <img src="./icons/top-review-3.svg" alt="">
-            <div class="text-cyan-500 font-bold ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut a quas non optio, reiciendis quasi maiores sed debitis animi et.</div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- developer profile -->
-    <section class="mx-auto max-w-7xl  w-full h-20 mt-40 ">
-      <div class="flex items-center justify-between gap-10"> 
-
-        <div class="w-1/3">
-          <h1 class="text-4xl font-bold mb-6">Turing Deep Developer Profile</h1>
-        <p class="text-gray-600 mb-10">Our in-depth resumes help you know your next developers better. Explore their strengths and weaknesses with our Deep Developer Profiles and decide if they are a good fit for your team.</p>
-
-        <button class="border-2 border-blue-600 bg-blue-600 px-4 py-3 rounded-lg text-white font-bold text-xl">Hire now</button>
-      </div>
-      <div class="w-2/3">
-        
         <img src="/image/devprofile.jpg" alt="">
       </div>
-      
+
     </div>
-    </section>
-  </body>
+  </section>
+  <!-- hiring process -->
+
+
+</body>
+
 </html>
