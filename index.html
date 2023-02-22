@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turning Clone</title>
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/Home/home.css">
+    <link rel="stylesheet" href="css/Common/common.css">
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.2/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS CDN -->
@@ -27,7 +27,7 @@
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
                 <!-- Navigation Logo -->
                 <a href="#" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-10" alt="Logo" />
+                    <img src="Resource/images/icons/Turing-logo.jpeg" class="h-6 mr-3 sm:h-10" alt="Logo" />
                     <span class="self-center text-xl font-semibold whitespace-nowrap">Web Alliance</span>
                 </a>
                 <button data-collapse-toggle="navbar-dropdown" type="button"
@@ -579,6 +579,76 @@
             <div class="bottom-left text-lg p-5"><i class="fa-solid fa-circle-play mr-2"></i>Watch Video</div>
         </div>
     </div>
+
+    <!-- Second Carousel -->
+    <div id="controls-carousel" class="relative max-w-screen-xl mx-auto" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="text-4xl text-center mt-36">
+                    "Turing books $87M at a $7.1B valuation to help source, hire <br>
+                    and manage engineers remotely"
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <div class="text-4xl text-center mt-36">
+                    "Turing named one of America's Best Startup Employers for <br>
+                    2022 by Forbes"
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="text-4xl text-center mt-36">
+                    "Ranked no. 1 in The Information's "50 Most Promising <br>
+                    Startups of 2021" in the B2B category"
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="text-4xl text-center mt-36">
+                    "Turing named to Fast Company's World's Most Innovative <br>
+                    Companies 2021 for placing remote devs at top firms via <br>
+                    Al-powered vetting"
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="text-4xl text-center mt-36">
+                    "Turing helps entrepreneurs tap into the global talent pool <br>
+                    to hire elite, pre-vetted remote engineers at the push of a <br>
+                    button"
+                </div>
+            </div>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
 
     <!-- Hire developers section -->
     <section class="bg-gray-900 font-sans">
