@@ -10,10 +10,23 @@
     <link rel="stylesheet" href="css/Jobs/Jobs.css" />
     <!-- Swiper Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+     <!-- OWL -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Flowbite CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -1031,170 +1044,99 @@
                 </div>
             </div>
             <!-- Carousel Card -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <!-- Slide 1 -->
-                        <div class="max-w-sm mt-3 bg-white border border-gray-200 rounded-lg shadow">
-                            <a href="#">
-                                <img class="rounded-t-lg" src="./Resource/images/Apply_for_jobs/review-1.jpg" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                                        Software Engineer
-                                    </h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700">
-                                    Joining Turing was a life-changing decision for me. What I like about Turing is that
-                                    they delivered what they promised; a steady income and carrer growth!
-                                </p>
-                                <button
-                                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-blue-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                    <span
-                                        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                                        Watch Video
-                                    </span>
-                            </div>
+            <div class="owl-carousel owl-theme py-10">
+                <!-- Card-1 -->
+                <div class="item text-white mr-5 img-item rounded-lg">
+                    <img class="brightness-50 rounded-t-lg "
+                        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Drink" />
+                    <div class="top-left text-left p-5">
+                        <p class="text-sm font-bold">Franco, Brazil</p>
+                        <p class="text-sm">Software Engineer</p>
+                        <div class="mt-10 italic">
+                            "Joining Turing was a life changing decision for me.What I like about Turing is that they delivered what they promised;
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <!-- Slide 2 -->
-                        <div class="max-w-sm mt-3 bg-white border border-gray-200 rounded-lg shadow">
-                            <a href="#">
-                                <img class="rounded-t-lg" src="./Resource/images/Apply_for_jobs/review-2.jpg" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                                        Ex-Amazone Software Engineer
-                                    </h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700">
-                                    I can work in the heart of Silicon Valley from the comfort of my home. With great
-                                    pay and solid growth opportunities. I feel like I have the best of both worlds.
-                                </p>
-                                <button
-                                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-blue-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                    <span
-                                        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                                        Watch Video
-                                    </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Slide 3 -->
-                        <div class="max-w-sm mt-3 bg-white border border-gray-200 rounded-lg shadow">
-                            <a href="#">
-                                <img class="rounded-t-lg " src="./Resource/images/Apply_for_jobs/review-3.jpg" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                                        Back-end Developer
-                                    </h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700">
-                                    Turing offers an environment that is intellectually and culturally dynamic.I feel
-                                    like I have the best of both worlds With great pay and solid growth .
-                                </p>
-                                <button
-                                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-blue-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                    <span
-                                        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                                        Watch Video
-                                    </span>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Slide-4 -->
-                        <div class="max-w-sm mt-3 bg-white border border-gray-200 rounded-lg shadow">
-                            <a href="#">
-                                <img class=" rounded-t-lg " src="./Resource/images/Apply_for_jobs/Developers-3.jpg"
-                                    alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                                        Full Stack Developer
-                                    </h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700">
-                                    I feel I like Cristiano Ronaldo and Turing is my manager. They find the best
-                                    opportunities for me.With great pay and solid growth.I have been able to make time
-                                    to play football.
-                                </p>
-                                <button
-                                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-blue-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                    <span
-                                        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                                        Watch Video
-                                    </span>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Slide 5 -->
-                        <div class="max-w-sm mt-3 bg-white border border-gray-200 rounded-lg shadow">
-                            <a href="#">
-                                <img class="rounded-t-lg" src="./Resource/images/Apply_for_jobs/Developers-2.jpg"
-                                    alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                                        Software Engineer
-                                    </h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700">
-                                    Ever Science I have joined Turing. I have been able to make time to play football.
-                                    freedom or travel, and more time to spend with my family as well.
-                                </p>
-                                <button
-                                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-blue-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300">
-                                    <span
-                                        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                                        Watch Video
-                                    </span>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <!-- Slide - 6 -->
-                        <div class="max-w-sm mt-3 bg-white border border-gray-200 rounded-lg shadow">
-                            <a href="#">
-                                <img class="rounded-t-lg" src="./Resource/images/Apply_for_jobs/Developers-3.jpg"
-                                    alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                                        Full Stack Developer
-                                    </h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700">
-                                    With Turing's good and timely payments, my financial health is better than ever.I
-                                    have the best of both worlds With great pay and solid growth .
-                                </p>
-                                <button
-                                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-blue-600 group-hover:to-blue-500 hover:text-whitefocus:ring-4 focus:outline-none focus:ring-blue-300">
-                                    <span
-                                        class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                                        Watch Video
-                                    </span>
-
-                            </div>
-                        </div>
-                    </div>
-
-
+                    <div class="bottom-left text-lg p-5"><i class="fa-solid fa-circle-play mr-2"></i>Watch Video</div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <!-- Card-2 -->
+                <div class="item text-white mr-5 rounded-lg">
+                    <img class="brightness-50 rounded-lg"
+                        src="https://images.pexels.com/photos/4558541/pexels-photo-4558541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Drink" />
+                    <div class="top-left text-left p-5">
+                        <p class="text-sm font-bold">Dhyey, India</p>
+                        <p class="text-sm">Ex-Amazon Software Engineer</p>
+                        <div class="mt-10 italic">
+                            "I can work in the heart of Silicon Valley from the comfort of my home.With great pay and solid growth opportunities"
+                        </div>
+                    </div>
+                    <div class="bottom-left text-lg p-5"><i class="fa-solid fa-circle-play mr-2"></i>Watch Video</div>
+                </div>
+                <!-- Card-3 -->
+                <div class="item text-white mr-5 rounded-lg">
+                    <img class="brightness-50 rounded-lg"
+                        src="https://images.pexels.com/photos/7743329/pexels-photo-7743329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Drink" />
+                    <div class="top-left text-left p-5">
+                        <p class="text-sm font-bold">James, Turkey</p>
+                        <p class="text-sm">Back-end Developer</p>
+                        <div class="mt-10 italic">
+                            "Turing offers an environment that is intellectually and culturally dynamic."
+                        </div>
+                    </div>
+                    <div class="bottom-left text-lg p-5"><i class="fa-solid fa-circle-play mr-2"></i>Watch Video</div>
+                </div>
+                <!-- Card-4 -->
+                <div class="item text-white mr-5 rounded-lg">
+                    <img class="brightness-50 rounded-lg"
+                        src="https://images.pexels.com/photos/6256850/pexels-photo-6256850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Drink" />
+                    <div class="top-left text-left p-5">
+                        <p class="text-sm font-bold">Hernan, colombia</p>
+                        <p class="text-sm">Full Stack Developer</p>
+                        <div class="mt-10">
+                            "I feel like I'm Cristiano Ronaldo and Turing is my manager.They find the best opportunity for me"
+                        </div>
+                    </div>
+                    <div class="bottom-left text-lg p-5"><i class="fa-solid fa-circle-play mr-2"></i>Watch Video</div>
+                </div>
+                <!-- Card-5 -->
+                <div class="item text-white mr-5 rounded-lg">
+                    <img class="brightness-50 rounded-lg"
+                        src="https://images.pexels.com/photos/13500513/pexels-photo-13500513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Drink" />
+                    <div class="top-left text-left p-5">
+                        <p class="text-sm font-bold">Saroj, Nepal</p>
+                        <p class="text-sm">Software Engineer</p>
+                        <div class="mt-10">
+                            "Ever Since I have joined Turing, I have been able to make time to play football, freedom to travel and more time to spend with my family as well"
+                        </div>
+                    </div>
+                    <div class="bottom-left text-lg p-5"><i class="fa-solid fa-circle-play mr-2"></i>Watch Video</div>
+                </div>
+                <!-- Card-6 -->
+                <div class="item text-white mr-5 rounded-lg">
+                    <img class="brightness-50 rounded-lg"
+                        src="https://images.pexels.com/photos/4195342/pexels-photo-4195342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Drink" />
+                    <div class="top-left text-left p-5">
+                        <p class="text-sm font-bold">Baah, Ghana</p>
+                        <p class="text-sm">Full-stack Developer</p>
+                        <div class="mt-10">
+                            "With turing's good and timely payments, my financial health is better than ever."
+                        </div>
+                    </div>
+                    <div class="bottom-left text-lg p-5"><i class="fa-solid fa-circle-play mr-2"></i>Watch Video</div>
+                </div>
+                <!-- Card-7 -->
+                <div class="item text-white mr-5 rounded-lg">
+                    <img class="rounded-lg"
+                        src="https://images.pexels.com/photos/4021783/pexels-photo-4021783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Drink" />
+                    <div class="top-left text-left p-5">
+                        
+                        <div class="mt-20">
+                            <h1 class="font-medium text-xl">Find out why developers love turing</h1>
+                           <span>
+                            <button type="button" class="mt-5 text-sky-800 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2">See all Turing reviews </button>
+                           </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -2553,8 +2495,8 @@
 
     </section>
     <!-- Work full time Section -->
-    <section class="p-8" style="background-color: black;">
-        <div class="max-w-screen-xl mx-auto ">
+    <section class="p-8 bg-[#212121]">
+        <div class="max-w-screen-xl mx-auto">
             <h1 class=" text-white text-center text-3xl font-medium mb-6">Work full-time at top U.S. <br> companies</h1>
             <p class=" text-white text-center text-base font-normal mb-6">Create your profile, pass Turing Tests, and
                 get
@@ -2566,37 +2508,38 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-black">
+    <!-- footer -->
+    <footer class="bg-[#1e1e1e] font-sans">
         <div class="px-4 py-28 max-w-screen-xl mx-auto">
             <div class="md:grid md:grid-cols-3">
                 <div class="mb-6 md:mb-0 flex flex-col justify-between">
                     <div>
                         <a href="https://flowbite.com/" class="flex items-center">
-                            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="FlowBite Logo" />
-                            <span
-                                class="self-center text-3xl text-white font-semibold whitespace-nowrap">Flowbite</span>
+                            <img src="Resource/images/icons/turing-logo-alt.png" class="h-8 mr-3" alt="FlowBite Logo" />
+                            <span class="self-center text-3xl text-white font-bold whitespace-nowrap">
+                                Web Alliance
+                            </span>
                         </a>
                     </div>
                     <!-- Social Media icons -->
                     <div class="flex mt-4 space-x-6 sm:mt-0 content-end">
-                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <a href="https://www.facebook.com/" target="_blank" class="text-gray-500 hover:text-gray-900">
                             <i class="fa-brands fa-facebook w-5 h-5"></i>
                             <span class="sr-only">Facebook page</span>
                         </a>
-                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <a href="https://www.twitter.com/" target="_blank" class="text-gray-500 hover:text-gray-900">
                             <i class="fa-brands fa-twitter w-5 h-5"></i>
                             <span class="sr-only">Twitter page</span>
                         </a>
-                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <a href="https://www.linkedin.com/" target="_blank" class="text-gray-500 hover:text-gray-900">
                             <i class="fa-brands fa-linkedin w-5 h-5"></i>
                             <span class="sr-only">Linkedin page</span>
                         </a>
-                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <a href="https://www.instagram.com/" target="_blank" class="text-gray-500 hover:text-gray-900">
                             <i class="fa-brands fa-instagram w-5 h-5"></i>
                             <span class="sr-only">Instagram page</span>
                         </a>
-                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <a href="https://www.youtube.com/" target="_blank" class="text-gray-500 hover:text-gray-900">
                             <i class="fa-brands fa-dribbble w-5 h-5"></i>
                             <span class="sr-only">Youtube account</span>
                         </a>
@@ -2616,7 +2559,8 @@
                                 <a href="https://tailwindcss.com/" class="hover:underline">Book a Call</a>
                             </li>
                             <li class="mb-4">
-                                <a href="https://tailwindcss.com/" class="hover:underline">Hire for Specific Skills</a>
+                                <a href="https://tailwindcss.com/" class="hover:underline">Hire for Specific
+                                    Skills</a>
                             </li>
                             <li class="mb-4">
                                 <a href="https://tailwindcss.com/" class="hover:underline">Customer Reviews</a>
@@ -2731,10 +2675,10 @@
             <div class="sm:flex sm:items-center sm:justify-between">
                 <p class="text-sm text-gray-500">
                     <span class="text-2xl text-left">© 2023 Turing</span>
-                    <span class="block text-left mt-4">1900 Embarcadero Road Palo Alto, CA, 94303.</span>
+                    <span class="block text-left mt-4">This site is built for educational purposes only.</span>
                 </p>
 
-                <ul class="flex gap-6 text-gray-500 dark:text-gray-400">
+                <ul class="flex gap-6 text-gray-500">
                     <li class="mb-4">
                         <a href="#" class="hover:underline">Site map</a>
                     </li>
@@ -2757,6 +2701,32 @@
     <script src="https://kit.fontawesome.com/006564a342.js" crossorigin="anonymous"></script>
     <!-- Js link -->
     <script src="./js/Jobs/Jobs.js"></script>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- OWL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        </script>
 </body>
 
 </html>
